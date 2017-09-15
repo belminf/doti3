@@ -12,6 +12,11 @@ bindsym $mod+Shift+c reload
 # Restart
 bindsym $mod+Shift+r restart; exec xrandr --auto
 
+# Locking
+set $locker "light-locker-command -l"
+exec --no-startup-id light-locker
+exec --no-startup-id xautolock -time 5 -locker $locker
+
 # Exit options
 set $mode_system Choose: (l) Lock, (x) Logout, (r) Reboot, (Shift+s) Shutdown
 mode "$mode_system" {
@@ -24,10 +29,6 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 bindsym $mod+End mode "$mode_system"
-
-# Locking
-set $locker "light-locker-command -l"
-exec --no-startup-id xautolock -time 5 -locker $locker
 
 # Rofi (launcher)
 bindsym $mod+space exec "rofi -combi-modi drun,window,run -show combi -modi combi"
