@@ -1,0 +1,210 @@
+## Basics
+
+# Use Windows key
+set $mod Mod4
+
+# Set font
+font pango:DejaVu Sans Mono 10
+
+# Reload
+bindsym $mod+Shift+c reload
+
+# Restart
+bindsym $mod+Shift+r restart; exec xrandr --auto
+
+# Exit options
+set $mode_system Choose: (l) Lock, (x) Logout, (r) Reboot, (Shift+s) Shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id $locker, mode "default"
+    bindsym x exec --no-startup-id i3-msg exit, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+End mode "$mode_system"
+
+# Locking
+set $locker "light-locker-command -l"
+exec --no-startup-id xautolock -time 5 -locker $locker
+
+# Rofi (launcher)
+bindsym $mod+space exec "rofi -combi-modi drun,window,run -show combi -modi combi"
+bindsym Mod1+Tab exec "rofi -show window"
+
+
+## Application shortcuts
+
+# Terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# Chrome
+bindsym $mod+c exec chromium
+
+
+## Unused defaults
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# kill focused window
+bindsym $mod+q kill
+
+
+## Navigation
+
+# Change focus
+bindsym $mod+h focus left
+bindsym $mod+l focus right
+bindsym $mod+j focus up
+bindsym $mod+k focus down
+
+# Change focus with cursor keys
+bindsym $mod+Left focus left
+bindsym $mod+Right focus right
+bindsym $mod+Up focus up
+bindsym $mod+Down focus down
+
+# Move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+j move up
+bindsym $mod+Shift+k move down
+
+# Move focused window with cursor keys
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Down move down
+
+
+## Layouts
+
+# Splits
+bindsym $mod+v split v
+bindsym $mod+Shift+v split h
+
+# Change layout mode
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Fullscreen
+bindsym $mod+f fullscreen toggle
+
+## Floating
+
+# Toggle tiling/floating
+bindsym $mod+Tab floating toggle
+
+# Change focus
+bindsym $mod+Shift+Tab focus mode_toggle
+
+# Focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+d focus child
+
+# Switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1; workspace 1
+bindsym $mod+Shift+2 move container to workspace 2; workspace 2
+bindsym $mod+Shift+3 move container to workspace 3; workspace 3
+bindsym $mod+Shift+4 move container to workspace 4; workspace 4
+bindsym $mod+Shift+5 move container to workspace 5; workspace 5
+bindsym $mod+Shift+6 move container to workspace 6; workspace 6
+bindsym $mod+Shift+7 move container to workspace 7; workspace 7
+bindsym $mod+Shift+8 move container to workspace 8; workspace 8
+bindsym $mod+Shift+9 move container to workspace 9; workspace 9
+bindsym $mod+Shift+0 move container to workspace 10; workspace 10
+
+# Resize window
+mode "resize" {
+       
+        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym k resize grow height 10 px or 10 ppt
+        bindsym h resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+## i3bar
+bar {
+        status_command i3status
+        font pango:DejaVu Sans Mono, FontAwesome 6
+	mode hide
+	position top
+	tray_output primary
+}
+
+
+## Hardware
+
+# Float volume control
+for_window [title="Volume Control"] floating enable
+focus_follows_mouse yes
+
+# Volume control
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+
+# Mouse options
+exec_always --no-startup-id xinput set-prop "Synaptics TM3072-003" "libinput Tapping Enabled" 1
+exec_always --no-startup-id xinput set-prop "Synaptics TM3072-003" "libinput Scroll Method Enabled" 0 1 0
+
+
+## Display
+
+# Manage display brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight + 20
+bindsym XF86MonBrightnessDown exec xbacklight - 20 
+
+# Tint display
+exec --no-startup-id "pkill redshift > /dev/null 2>&1 || redshift -t 5500:1500 -l 40:-74"
+
+# Display background
+exec_always --no-startup-id xsetroot -solid "#696969"
+exec_always --no-startup-id feh --bg-scale ~/arch-wallpaper.jpg
+
+# Dim inactive windows
+exec_always --no-startup-id "compton -b --inactive-dim 0.3 --inactive-dim-fixed"
+
+# Personalization
+new_window pixel 5
+client.focused          #000000 #285577 #ffffff #404040 #000000
+client.focused_inactive #000000 #5f676a #ffffff #484e50 #000000
+client.unfocused        #000000 #222222 #888888 #292d2e #000000
+client.urgent           #000000 #900000 #ffffff #900000 #000000
+client.placeholder      #000000 #0c0c0c #ffffff #000000 #000000
+
+
+## Clipboard
+
+# Screenshot
+bindsym --release Print exec xfce4-screenshooter -w -s ~/Screenshots
+bindsym --release Shift+Print exec xfce4-screenshooter -r -s ~/Screenshots
+
+# Clipboard manager
+exec_always --no-startup-id parcellite
