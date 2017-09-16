@@ -158,7 +158,6 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
         font pango:DejaVu Sans Mono, FontAwesome 6
-	mode hide
 	position top
 	tray_output primary
 }
@@ -177,7 +176,7 @@ bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ t
 
 # Mouse options
 exec_always --no-startup-id xinput set-prop "Synaptics TM3072-003" "libinput Tapping Enabled" 1
-exec_always --no-startup-id xinput set-prop "Synaptics TM3072-003" "libinput Scroll Method Enabled" 1 0 0
+exec_always --no-startup-id xinput set-prop "Synaptics TM3072-003" "libinput Scroll Method Enabled" 0 1 0
 
 
 ## Display
