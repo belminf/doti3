@@ -36,6 +36,7 @@ bindsym Mod1+Tab exec "rofi -show window"
 
 # Startup
 exec --no-startup-id dropbox
+exec --no-startup-id xfce4-clipman 
 
 
 ## Application shortcuts
@@ -209,6 +210,3 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000 #000000
 # Screenshot
 bindsym --release Print exec xfce4-screenshooter -w -s ~/Screenshots
 bindsym --release Shift+Print exec xfce4-screenshooter -r -s ~/Screenshots
-
-# Clipboard manager
-exec_always --no-startup-id parcellite
