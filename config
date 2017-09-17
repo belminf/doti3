@@ -10,7 +10,7 @@ font pango:DejaVu Sans Mono 10
 bindsym $mod+Shift+c reload
 
 # Restart
-bindsym $mod+Shift+r restart; exec xrandr --auto
+bindsym $mod+Shift+r restart
 
 # Locking
 set $locker "light-locker-command -l"
