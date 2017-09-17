@@ -203,7 +203,12 @@ exec_always --no-startup-id feh --bg-scale ~/arch-wallpaper.jpg
 exec_always --no-startup-id "compton -b --inactive-dim 0.3 --inactive-dim-fixed"
 
 # Personalization
-new_window pixel 5
+new_window pixel 0
+for_window [class="^.*"] border pixel 0
+gaps inner 10
+smart_gaps on
+smart_borders on
+
 client.focused          #000000 #285577 #ffffff #404040 #000000
 client.focused_inactive #000000 #5f676a #ffffff #484e50 #000000
 client.unfocused        #000000 #222222 #888888 #292d2e #000000
