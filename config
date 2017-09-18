@@ -32,7 +32,6 @@ bindsym $mod+End mode "$mode_system"
 
 # Rofi (launcher)
 bindsym $mod+space exec "rofi -combi-modi drun,window,run -show combi -modi combi"
-bindsym Mod1+Tab exec "rofi -show window"
 
 # Startup
 exec --no-startup-id dropbox
