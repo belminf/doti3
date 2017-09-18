@@ -1,5 +1,8 @@
 ## Basics
 
+# Per: https://github.com/i3/i3/issues/2936
+disable_rand15 yes
+
 # Use Windows key
 set $mod Mod4
 
