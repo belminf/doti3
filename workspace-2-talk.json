@@ -1,0 +1,41 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1060,
+       "width": 945,
+       "x": 1890,
+       "y": 10
+    },
+    "name": "WhatsApp",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "instance": "^crx_hnpfjngllnobngcgfapefoaidbinmjnm$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1060,
+       "width": 945,
+       "x": 1890,
+       "y": 10
+    },
+    "name": "Gmail",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "instance": "^crx_pjkljhegncpnkpknbcohdijeoejaedia$"
+       }
+    ],
+    "type": "con"
+}
+
