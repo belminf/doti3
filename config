@@ -195,7 +195,7 @@ exec_always --no-startup-id xinput set-prop "Synaptics TM3072-003" "Synaptics Tw
 
 # Manage display brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight + 20
-bindsym XF86MonBrightnessDown exec xbacklight - 20 
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight - 20 
 
 # Tint display
 exec --no-startup-id "pkill redshift > /dev/null 2>&1 || redshift -t 6500:2000 -l 40:-74"
