@@ -69,16 +69,16 @@ bindsym $mod+q kill
 ## Navigation
 
 # Change focus
-bindsym $mod+h focus left; exec --no-startup-id move_mouse
-bindsym $mod+l focus right; exec --no-startup-id move_mouse
-bindsym $mod+j focus up; exec --no-startup-id move_mouse
-bindsym $mod+k focus down; exec --no-startup-id move_mouse
+bindsym $mod+h focus left; exec --no-startup-id ~/.config/i3/move_mouse
+bindsym $mod+l focus right; exec --no-startup-id ~/.config/i3/move_mouse
+bindsym $mod+j focus up; exec --no-startup-id ~/.config/i3/move_mouse
+bindsym $mod+k focus down; exec --no-startup-id ~/.config/i3/move_mouse
 
 # Change focus with cursor keys
-bindsym $mod+Left focus left; exec --no-startup-id move_mouse
-bindsym $mod+Right focus right; exec --no-startup-id move_mouse
-bindsym $mod+Up focus up; exec --no-startup-id move_mouse
-bindsym $mod+Down focus down; exec --no-startup-id move_mouse
+bindsym $mod+Left focus left; exec --no-startup-id ~/.config/i3/move_mouse
+bindsym $mod+Right focus right; exec --no-startup-id ~/.config/i3/move_mouse
+bindsym $mod+Up focus up; exec --no-startup-id ~/.config/i3/move_mouse
+bindsym $mod+Down focus down; exec --no-startup-id ~/.config/i3/move_mouse
 
 # Move focused window
 bindsym $mod+Shift+h move left
