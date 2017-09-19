@@ -24,9 +24,9 @@ exec --no-startup-id xautolock -time 5 -locker $locker
 set $mode_system Choose: (l) Lock, (x) Logout, (r) Reboot, (Shift+s) Shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id $locker, mode "default"
-    bindsym x exec --no-startup-id i3-msg exit, mode "default"
-    bindsym r exec --no-startup-id systemctl reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"  
+    bindsym x exec --no-startup-id "pkill --parent 1 chromium; sleep 2; i3-msg exit", mode "default"
+    bindsym r exec --no-startup-id "pkill --parent 1 chromium; sleep 2; systemctl reboot", mode "default"
+    bindsym Shift+s exec --no-startup-id "pkill --parent 1 chromium; sleep 2; systemctl poweroff", mode "default"  
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
