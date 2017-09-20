@@ -100,14 +100,9 @@ bindsym $mod+Mod1+Right move workspace to output right
 
 ## Layouts
 
-# Splits
-bindsym $mod+v split v
-bindsym $mod+Shift+v split h
-
 # Change layout mode
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+t layout tabbed
+bindsym $mod+s layout toggle split
 
 # Fullscreen
 bindsym $mod+f fullscreen toggle
