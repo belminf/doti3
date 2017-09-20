@@ -185,6 +185,7 @@ bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ t
 
 # Mouse options
 exec_always --no-startup-id xinput set-prop "Synaptics TM3072-003" "Synaptics Two-Finger Scrolling" 1 1
+exec_always --no-startup-id xinput set-prop "Synaptics TM3072-003" "Synaptics Tap Action" 1 1 1 1 1 1 1
 
 
 ## Display
