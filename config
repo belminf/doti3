@@ -198,7 +198,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight + 20
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight - 20 
 
 # Tint display
-exec --no-startup-id "pkill redshift > /dev/null 2>&1 || redshift -t 6500:2000 -l 40:-74"
+exec --no-startup-id "pkill redshift > /dev/null 2>&1 || redshift -t 6500:2500 -l 40:-74"
 
 # Display background
 exec_always --no-startup-id xsetroot -solid "#696969"
