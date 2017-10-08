@@ -163,14 +163,8 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-## i3bar
-bar {
-        status_command i3status
-        font pango:DejaVu Sans Mono, FontAwesome 6
-	position top
-	tray_output primary
-}
-
+# Using polybar for status bar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 ## Hardware
 
