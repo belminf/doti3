@@ -205,7 +205,6 @@ exec_always --no-startup-id "compton -b --inactive-opacity 0.8"
 new_window pixel 0
 for_window [class="^.*"] border pixel 0
 gaps inner 10
-smart_gaps on
 smart_borders on
 
 client.focused          #000000 #285577 #ffffff #404040 #000000
