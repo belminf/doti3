@@ -185,7 +185,7 @@ exec_always --no-startup-id xinput set-prop "Synaptics TM3072-003" "Synaptics Ta
 ## Display
 
 # Default dislay setup
-exec --no-startup-id "xrandr --query | grep DP2-1 > /dev/null 2>&1 && xrandr --output DP2-1 --preferred --primary --right-of eDP1 --auto && feh --bg-scale '/home/belminf/arch-wallpaper.jpg'"
+exec --no-startup-id "xrandr --query | grep DP2-2 > /dev/null 2>&1 && xrandr --output DP2-2 --preferred --primary --right-of eDP1 --auto && feh --bg-scale '/home/belminf/arch-wallpaper.jpg'"
 
 # Manage display brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight + 20
