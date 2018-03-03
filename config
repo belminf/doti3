@@ -40,7 +40,6 @@ bindsym $mod+space exec "rofi -combi-modi drun,window,run -show combi -modi comb
 exec --no-startup-id dropbox
 exec --no-startup-id xfce4-clipman
 exec --no-startup-id blueman-applet
-exec --no-startup-id ~/.config/i3/switch_to_browser.py
 
 # Clipboard
 bindsym --release $mod+v exec xfce4-popup-clipman
@@ -172,6 +171,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 # Floating windows
 for_window [title="Volume Control"] floating enable
 for_window [title="Bluetooth Devices"] floating enable
+#for_window [title="Android Emulator - .*"] floating enable
 focus_follows_mouse yes
 
 # Volume control
