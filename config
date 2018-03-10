@@ -51,7 +51,7 @@ bindsym --release Shift+Print exec xfce4-screenshooter -r -s ~/Screenshots
 ## Application shortcuts
 
 # Terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal -e 'bash -c "tmux attach || tmux new"'
 
 # Chrome
 bindsym $mod+c exec chromium
