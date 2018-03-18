@@ -23,8 +23,8 @@ exec --no-startup-id light-locker --lock-after-screensaver=30
 set $mode_system Choose: (l) Lock, (x) Logout, (r) Reboot, (Shift+s) Shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id "light-locker-command -l", mode "default"
-    bindsym x exec --no-startup-id "pkill --parent 1 chromium; sleep 2; i3-msg exit", mode "default"
-    bindsym r exec --no-startup-id "pkill --parent 1 chromium; sleep 2; systemctl reboot", mode "default"
+    bindsym x exec --no-startup-id "i3-msg '[class=\".*\"] kill'; sleep 2; i3-msg exit", mode "default"
+    bindsym r exec --no-startup-id "i3-msg '[class=\".*\"] kill'; sleep 2; systemctl reboot", mode "default"
     bindsym Shift+s exec --no-startup-id "pkill --parent 1 chromium; sleep 2; systemctl poweroff", mode "default"  
 
     bindsym Return mode "default"
