@@ -7,7 +7,7 @@ disable_randr15 yes
 set $mod Mod4
 
 # Set font
-font pango:DejaVu Sans Mono 10
+font pango:Hack 10
 
 # Reload
 bindsym $mod+Shift+c reload
