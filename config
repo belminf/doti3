@@ -190,7 +190,7 @@ exec_always --no-startup-id synclient PalmDetect=1
 ## Display
 
 # Default dislay setup
-exec --no-startup-id "xrandr --query | grep DP2-2 > /dev/null 2>&1 && xrandr --output DP2-2 --preferred --primary --right-of eDP1 --auto && feh --bg-scale '/home/belminf/arch-wallpaper.jpg'"
+exec --no-startup-id "xrandr --query | grep DP2-2 > /dev/null 2>&1 && xrandr --output DP2-2 --preferred --primary --right-of eDP1 --auto && /home/belminf/.fehbg"
 
 # Manage display brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight + 20
@@ -201,7 +201,7 @@ exec --no-startup-id "pkill redshift > /dev/null 2>&1 || redshift -t 6500:2500 -
 
 # Display background
 exec_always --no-startup-id xsetroot -solid "#696969"
-exec_always --no-startup-id feh --bg-scale ~/arch-wallpaper.jpg
+exec_always --no-startup-id /home/belminf/.fehbg
 
 # Dim inactive windows
 exec_always --no-startup-id "compton -b --inactive-opacity 0.8"
