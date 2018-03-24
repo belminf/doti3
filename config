@@ -131,6 +131,7 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+bindsym $mod+grave workspace next_on_output
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1; workspace 1
@@ -153,9 +154,9 @@ mode "resize" {
         bindsym k resize grow height 10 px or 10 ppt
 
         bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
