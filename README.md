@@ -16,30 +16,30 @@ With leader key (<kbd>R-Window</kbd>):
   * <kbd>Print</kbd>: Save in clipboard
   * <kbd>Shift+Print</kbd>: Save in ~/Screenshots
 * Workspace movement:
-  * <kbd>Alt</kbd><kbd>&larrow;</kbd>: Move current workspace to the left 
-  * <kbd>Alt</kbd><kbd>&rarrow;</kbd>: Move current workspace to the right 
+  * <kbd>Alt</kbd><kbd>&leftarrow;</kbd>: Move current workspace to the left 
+  * <kbd>Alt</kbd><kbd>&rightarrow;</kbd>: Move current workspace to the right 
   * <kbd>(Workspace Number)</kbd>: Move focus to a workspace
 * Window layout:
   * <kbd>t</kbd>: Tabbed layout
   * <kbd>s</kbd>: Split toggle (i.e., vertical v. horizontal) 
   * <kbd>f</kbd>: Go fullscreen
 * Window focus:
-  * <kbd>h</kbd>/<kbd>&larrow;</kbd>: Focus window on left 
-  * <kbd>l</kbd>/<kbd>&rarrow;</kbd>: Focus window on right 
-  * <kbd>j</kbd>/<kbd>&uarrow;</kbd>: Focus window on top 
-  * <kbd>k</kbd>/<kbd>&darrow;</kbd>: Focus window underneath 
+  * <kbd>h</kbd>/<kbd>&leftarrow;</kbd>: Focus window on left 
+  * <kbd>l</kbd>/<kbd>&rightarrow;</kbd>: Focus window on right 
+  * <kbd>j</kbd>/<kbd>&uparrow;</kbd>: Focus window on top 
+  * <kbd>k</kbd>/<kbd>&downarrow;</kbd>: Focus window underneath 
 * Window movement:
-  * <kbd>Shift</kbd><kbd>h</kbd>/<kbd>Shift</kbd><kbd>&larrow;</kbd>: Move current window left 
-  * <kbd>Shift</kbd><kbd>l</kbd>/<kbd>Shift</kbd><kbd>&rarrow;</kbd>: Move current window right 
-  * <kbd>Shift</kbd><kbd>j</kbd>/<kbd>Shift</kbd><kbd>&uarrow;</kbd>: Move current window up 
-  * <kbd>Shift</kbd><kbd>k</kbd>/<kbd>Shift</kbd><kbd>&darrow;</kbd>: Move current window down 
+  * <kbd>Shift</kbd><kbd>h</kbd>/<kbd>Shift</kbd><kbd>&leftarrow;</kbd>: Move current window left 
+  * <kbd>Shift</kbd><kbd>l</kbd>/<kbd>Shift</kbd><kbd>&rightarrow;</kbd>: Move current window right 
+  * <kbd>Shift</kbd><kbd>j</kbd>/<kbd>Shift</kbd><kbd>&uparrow;</kbd>: Move current window up 
+  * <kbd>Shift</kbd><kbd>k</kbd>/<kbd>Shift</kbd><kbd>&downarrow;</kbd>: Move current window down 
   * <kbd>Shift</kbd><kbd>(Workspace Number)</kbd>: Move current window to a workspace
 * Window resizing:
   * <kbd>r</kbd>: Enable resize mode
-  * <kbd>h</kbd>/<kbd>&larrow;</kbd>: Focus window on left 
-  * <kbd>l</kbd>/<kbd>&rarrow;</kbd>: Focus window on right 
-  * <kbd>j</kbd>/<kbd>&uarrow;</kbd>: Focus window on top 
-  * <kbd>k</kbd>/<kbd>&darrow;</kbd>: Focus window underneath 
+  * <kbd>h</kbd>/<kbd>&leftarrow;</kbd>: Focus window on left 
+  * <kbd>l</kbd>/<kbd>&rightarrow;</kbd>: Focus window on right 
+  * <kbd>j</kbd>/<kbd>&uparrow;</kbd>: Focus window on top 
+  * <kbd>k</kbd>/<kbd>&downarrow;</kbd>: Focus window underneath 
 
 Without leader key:
 * <kbd>L-Window</kbd>: Make `xpad` visible
