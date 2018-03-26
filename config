@@ -202,7 +202,7 @@ exec_always --no-startup-id xsetroot -solid "#696969"
 exec_always --no-startup-id /home/belminf/.fehbg
 
 # Dim inactive windows
-exec_always --no-startup-id "compton -b --inactive-opacity 0.8"
+exec_always --no-startup-id "compton -b --inactive-opacity 0.9"
 
 # Personalization
 new_window pixel 0
