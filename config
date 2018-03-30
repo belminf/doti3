@@ -13,8 +13,9 @@ font pango:Inconsolata Regular 10
 bindsym $mod+Shift+r restart
 
 # Locking
-exec --no-startup-id xset s 270 270
-exec --no-startup-id light-locker --lock-after-screensaver=30
+exec_always --no-startup-id xset s off
+exec_always --no-startup-id xset dpms 0 120 180
+exec_always --no-startup-id light-locker --lock-after-screensaver=180
 
 # Exit options
 set $mode_system Choose: (l) Lock, (x) Logout, (r) Reboot, (Shift+s) Shutdown
