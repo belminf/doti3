@@ -132,7 +132,10 @@ bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
+
+# Managing workspace in display
 bindsym $mod+grave workspace next_on_output
+bindsym $mod+Shift+grave exec $HOME/.config/i3/create_workspace.sh
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1; workspace 1
@@ -216,3 +219,4 @@ client.focused_inactive #000000 #5f676a #ffffff #484e50 #000000
 client.unfocused        #000000 #222222 #888888 #292d2e #000000
 client.urgent           #000000 #900000 #ffffff #900000 #000000
 client.placeholder      #000000 #0c0c0c #ffffff #000000 #000000
+

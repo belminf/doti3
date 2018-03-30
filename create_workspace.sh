@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Ref: https://github.com/sandeel/i3-new-workspace
+
+echo 'test' >> /tmp/i3_test.txt
+
+CURRENT_WORKSPACES=$(i3-msg -t get_workspaces)
+
+for i in {1..10} ; do
+    if [[ $CURRENT_WORKSPACES != *"\"num\":$i"* ]] ; then
+        i3-msg workspace number $i
+        break
+    fi
+done
