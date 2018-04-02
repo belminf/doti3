@@ -47,7 +47,7 @@ bindsym --release Print exec xfce4-screenshooter -r -c
 bindsym --release Shift+Print exec xfce4-screenshooter -r -s ~/Screenshots
 
 # Scratchpad
-bindcode 108 exec --no-startup-id xpad --toggle
+bindcode Shift+66 exec --no-startup-id xpad --toggle
 for_window [class=xpad] floating enable
 
 ## Application shortcuts
