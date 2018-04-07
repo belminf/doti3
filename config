@@ -109,6 +109,7 @@ bindsym $mod+s layout toggle split
 # Fullscreen
 bindsym $mod+f fullscreen toggle
 
+
 ## Floating
 
 # Toggle tiling/floating
@@ -171,6 +172,7 @@ bindsym $mod+r mode "resize"
 
 # Using polybar for status bar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 
 ## Hardware
 
