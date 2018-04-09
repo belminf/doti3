@@ -135,7 +135,7 @@ bindsym $mod+0 workspace 10
 
 # Managing workspace in display
 bindsym $mod+grave workspace next_on_output
-bindsym $mod+Shift+grave exec $HOME/.config/i3/create_workspace.sh
+bindsym $mod+Shift+grave exec ${HOME}/.config/i3/create_workspace.sh
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1; workspace 1
@@ -168,7 +168,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Using polybar for status bar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id ${HOME}/.config/polybar/launch.sh
 
 
 ## Hardware
@@ -188,7 +188,7 @@ bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ t
 ## Display
 
 # Search for DP monitor and set it as primary
-exec --no-startup-id $HOME/.config/i3/update_display.sh
+exec --no-startup-id ${HOME}/.config/i3/update_display.sh
 
 # Manage display brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight + 20
@@ -199,7 +199,7 @@ exec --no-startup-id "pkill redshift > /dev/null 2>&1 || redshift -t 6500:2500 -
 
 # Display background
 exec_always --no-startup-id xsetroot -solid "#696969"
-exec_always --no-startup-id /home/belminf/.fehbg
+exec_always --no-startup-id ${HOME}/.fehbg
 
 # Dim inactive windows
 exec_always --no-startup-id "compton -b --inactive-opacity 0.95"
