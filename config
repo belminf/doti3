@@ -1,8 +1,5 @@
 ## Basics
 
-# Per: https://github.com/i3/i3/issues/2936
-disable_randr15 yes
-
 # Use Windows key
 set $mod Mod4
 
@@ -190,8 +187,8 @@ bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ t
 
 ## Display
 
-# Default dislay setup
-exec --no-startup-id "xrandr --query | grep DP2-2 > /dev/null 2>&1 && xrandr --output DP2-2 --preferred --primary --right-of eDP1 --auto && /home/belminf/.fehbg"
+# Search for DP monitor and set it as primary
+exec --no-startup-id $HOME/.config/i3/update_display.sh
 
 # Manage display brightness
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight + 20

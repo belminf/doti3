@@ -1,8 +1,16 @@
 # doti3
 My i3wm configuration
 
-Keys:
------
+## Setup
+### Udev display update
+ Add the following to `/etc/udev/rules.d/98-monitor-hotplug.rules`:
+
+```
+KERNEL=="card0", SUBSYSTEM=="drm", ACTION=="change", ENV{DISPLAY}=":0.0", ENV{XUSER}="<USER>", RUN+="/bin/bash <SCRIPT PATH>" 
+
+``` 
+
+## Keys:
 With leader key (<kbd>R-Window</kbd>):
 
 * General:
