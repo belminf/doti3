@@ -6,36 +6,36 @@ My i3wm configuration
  Add the following to `/etc/udev/rules.d/98-monitor-hotplug.rules`:
 
 ```
-KERNEL=="card0", SUBSYSTEM=="drm", ACTION=="change", ENV{DISPLAY}=":0.0", ENV{XUSER}="<USER>", RUN+="/bin/bash <SCRIPT PATH>" 
+KERNEL=="card0", SUBSYSTEM=="drm", ACTION=="change", ENV{DISPLAY}=":0.0", ENV{XUSER}="<USER>", RUN+="/bin/bash <PATH OF fix_monitors.sh>" 
 
 ``` 
 
 ## Keys:
 Without leader key:
 
-  * <kbd>Capslock</kbd>: Start `rofi` (launcher) for Desktop apps
-  * <kbd>Ctrl</kbd><kbd>Capslock</kbd>: Start rofi (launcher) for Terminal commands
-  * <kbd>Shift</kbd><kbd>Capslock</kbd>: Make `xpad` visible
+  * <kbd>Capslock</kbd>: Start launcher for desktop apps
+  * <kbd>Ctrl</kbd><kbd>Capslock</kbd>: Start launcher for terminal commands
+  * <kbd>Shift</kbd><kbd>Capslock</kbd>: Make scratchpad visible
   * <kbd>F11</kbd>: Launch audio configuration
   * <kbd>F12</kbd>: Launch WiFi configuration
 
 With leader key (<kbd>R-Window</kbd>):
 
 * General:
-  * <kbd>Shift</kbd><kbd>R</kbd>: Restart i3 and reload config
+  * <kbd>Shift</kbd><kbd>R</kbd>: Restart and reload config
   * <kbd>End</kbd>: Bring up power menu (e.g., shutdown, restart, etc.)
   * <kbd>Shift</kbd><kbd>End</kbd>: Lock screen
   * <kbd>Q</kbd>: Quit window
   * <kbd>V</kbd>: Launch clipboard manager
 * Application shortcuts:
-  * <kbd>Enter</kbd>: Launch terminal (`tmux` in `termite`)
-  * <kbd>Space</kbd>: Launch `chromium`
+  * <kbd>Enter</kbd>: Launch terminal
+  * <kbd>Space</kbd>: Launch browser
   * <kbd>W</kbd>: Launch WhatsApp
   * <kbd>M</kbd>: Launch Google Play Music
   * <kbd>C</kbd>: Launch Google Calendar
   * <kbd>T</kbd>: Launch Todoist
   * <kbd>=</kbd>: Launch Calculator
-* Screenshot (with `xfce4-screenshooter`)
+* Screenshot
   * <kbd>Print</kbd>: Save in clipboard
   * <kbd>Shift+Print</kbd>: Save in ~/Screenshots
 * Workspace movement:
