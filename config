@@ -56,8 +56,23 @@ for_window [class=xpad] floating enable
 # Terminal: Using script from https://github.com/belminf/personal_scripts
 bindsym $mod+Return exec i3-sensible-terminal -t 'termite - tmux' -e 'bash -i -c "tmux_group_attach"'
 
-# Chrome
-bindsym $mod+c exec chromium
+# Chromium
+bindsym $mod+Space exec chromium
+
+# Whatsapp
+bindsym $mod+w exec gtk-launch chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default
+
+# GPM
+bindsym $mod+m exec gtk-launch chrome-lpcdfaekmigkmlegfhiljhipmhnhmffa-Default
+
+# Calendar
+bindsym $mod+c exec gtk-launch chrome-eahagendpjeagehfgdobhplebiikmpfo-Default
+
+# Todoist
+bindsym $mod+t exec gtk-launch chrome-fnnjlkpjpjeohmhhiahkjkhlnogeaaeb-Default
+
+# Calculator
+bindsym $mod+equal exec =
 
 
 ## Unused defaults

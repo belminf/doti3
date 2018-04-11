@@ -29,7 +29,11 @@ With leader key (<kbd>R-Window</kbd>):
 * Application shortcuts:
   * <kbd>Enter</kbd>: Launch terminal (`tmux` in `termite`)
   * <kbd>Space</kbd>: Launch `chromium`
-  * <kbd>Q</kbd>: Quit window
+  * <kbd>w</kbd>: Launch WhatsApp
+  * <kbd>m</kbd>: Launch Google Play Music
+  * <kbd>c</kbd>: Launch Google Calendar
+  * <kbd>t</kbd>: Launch Todoist
+  * <kbd>=</kbd>: Launch Calculator
 * Screenshot (with `xfce4-screenshooter`)
   * <kbd>Print</kbd>: Save in clipboard
   * <kbd>Shift+Print</kbd>: Save in ~/Screenshots
