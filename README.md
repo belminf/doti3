@@ -11,6 +11,12 @@ KERNEL=="card0", SUBSYSTEM=="drm", ACTION=="change", ENV{DISPLAY}=":0.0", ENV{XU
 ``` 
 
 ## Keys:
+Without leader key:
+
+* <kbd>Capslock</kbd>: Start `rofi` (launcher) for Desktop apps
+* <kbd>Ctrl</kbd><kbd>Capslock</kbd>: Start rofi (launcher) for Terminal commands
+* <kbd>Shift</kbd><kbd>Capslock</kbd>: Make `xpad` visible
+
 With leader key (<kbd>R-Window</kbd>):
 
 * General:
@@ -18,7 +24,7 @@ With leader key (<kbd>R-Window</kbd>):
   * <kbd>End</kbd>: Bring up power menu (e.g., shutdown, restart, etc.)
 * Application shortcuts:
   * <kbd>Enter</kbd>: Launch terminal (`tmux` in `termite`)
-  * <kbd>C</kbd>: Launch `chromium`
+  * <kbd>Space</kbd>: Launch `chromium`
   * <kbd>Q</kbd>: Quit window
 * Screenshot (with `xfce4-screenshooter`)
   * <kbd>Print</kbd>: Save in clipboard
@@ -49,6 +55,3 @@ With leader key (<kbd>R-Window</kbd>):
   * <kbd>L</kbd>/<kbd>&rightarrow;</kbd>: Focus window on right 
   * <kbd>J</kbd>/<kbd>&uparrow;</kbd>: Focus window on top 
   * <kbd>K</kbd>/<kbd>&downarrow;</kbd>: Focus window underneath 
-
-Without leader key:
-* <kbd>L-Window</kbd>: Make `xpad` visible

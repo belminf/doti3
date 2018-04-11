@@ -28,8 +28,11 @@ mode "$mode_system" {
 bindsym $mod+End mode "$mode_system"
 bindsym $mod+Pause exec --no-startup-id light-locker-command -l
 
-# Rofi (launcher)
-bindsym $mod+space exec "rofi -combi-modi drun,window,run -show combi -modi combi"
+# Rofi to run desktop apps (Capslock)
+bindcode 66 exec rofi -show drun
+
+# Rofi to run terminal commands
+bindcode Ctrl+66 exec rofi -terminal i3-sensible-terminal -show run -run-command "{terminal} --title {cmd} --hold -e {cmd}" -run-shell-command "{terminal} --title {cmd} --hold -e 'sudo {cmd}'"
 
 # Startup
 exec --no-startup-id dropbox
