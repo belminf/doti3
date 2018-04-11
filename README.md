@@ -23,16 +23,18 @@ Without leader key:
 With leader key (<kbd>R-Window</kbd>):
 
 * General:
-  * <kbd>Shift+R</kbd>: Restart i3 and reload config
+  * <kbd>Shift</kbd><kbd>R</kbd>: Restart i3 and reload config
   * <kbd>End</kbd>: Bring up power menu (e.g., shutdown, restart, etc.)
+  * <kbd>Shift</kbd><kbd>End</kbd>: Lock screen
   * <kbd>Q</kbd>: Quit window
+  * <kbd>V</kbd>: Launch clipboard manager
 * Application shortcuts:
   * <kbd>Enter</kbd>: Launch terminal (`tmux` in `termite`)
   * <kbd>Space</kbd>: Launch `chromium`
-  * <kbd>w</kbd>: Launch WhatsApp
-  * <kbd>m</kbd>: Launch Google Play Music
-  * <kbd>c</kbd>: Launch Google Calendar
-  * <kbd>t</kbd>: Launch Todoist
+  * <kbd>W</kbd>: Launch WhatsApp
+  * <kbd>M</kbd>: Launch Google Play Music
+  * <kbd>C</kbd>: Launch Google Calendar
+  * <kbd>T</kbd>: Launch Todoist
   * <kbd>=</kbd>: Launch Calculator
 * Screenshot (with `xfce4-screenshooter`)
   * <kbd>Print</kbd>: Save in clipboard
@@ -42,26 +44,28 @@ With leader key (<kbd>R-Window</kbd>):
   * <kbd>Alt</kbd><kbd>&rightarrow;</kbd>: Move current workspace to the right 
   * <kbd>(Workspace Number)</kbd>: Move focus to a workspace
   * <kbd>\`</kbd>: Cycle workspaces in current display
+  * <kbd>Shift</kbd><kbd>\`</kbd>: Create a new workspace in current display
 * Window layout:
-  * <kbd>T</kbd>: Tabbed layout
-  * <kbd>S</kbd>: Split toggle (i.e., vertical v. horizontal) 
+  * <kbd>Shift</kbd><kbd>T</kbd>: Tabbed layout
+  * <kbd>Shift</kbd><kbd>\\</kbd> (`|`): Split horizontal
+  * <kbd>Shift</kbd><kbd>-<kbd> (`_`): Split vertical
   * <kbd>F</kbd>: Go fullscreen
 * Window focus:
   * <kbd>Tab</kbd>: Toggle focus between floating and tiled windows
   * <kbd>Shift</kbd><kbd>Tab</kbd>: Toggle floating for a window
   * <kbd>H</kbd>/<kbd>&leftarrow;</kbd>: Focus window on left 
   * <kbd>L</kbd>/<kbd>&rightarrow;</kbd>: Focus window on right 
-  * <kbd>J</kbd>/<kbd>&uparrow;</kbd>: Focus window on top 
-  * <kbd>K</kbd>/<kbd>&downarrow;</kbd>: Focus window underneath 
+  * <kbd>J</kbd>/<kbd>&downarrow;</kbd>: Focus window below
+  * <kbd>K</kbd>/<kbd>&uparrow;</kbd>: Focus window above
 * Window movement:
   * <kbd>Shift</kbd><kbd>H</kbd>/<kbd>Shift</kbd><kbd>&leftarrow;</kbd>: Move current window left 
   * <kbd>Shift</kbd><kbd>L</kbd>/<kbd>Shift</kbd><kbd>&rightarrow;</kbd>: Move current window right 
-  * <kbd>Shift</kbd><kbd>J</kbd>/<kbd>Shift</kbd><kbd>&uparrow;</kbd>: Move current window up 
-  * <kbd>Shift</kbd><kbd>K</kbd>/<kbd>Shift</kbd><kbd>&downarrow;</kbd>: Move current window down 
+  * <kbd>Shift</kbd><kbd>J</kbd>/<kbd>Shift</kbd><kbd>&downarrow;</kbd>: Move current window down 
+  * <kbd>Shift</kbd><kbd>K</kbd>/<kbd>Shift</kbd><kbd>&uparrow;</kbd>: Move current window up 
   * <kbd>Shift</kbd><kbd>(Workspace Number)</kbd>: Move current window to a workspace
 * Window resizing:
   * <kbd>R</kbd>: Enable resize mode
-  * <kbd>H</kbd>/<kbd>&leftarrow;</kbd>: Focus window on left 
-  * <kbd>L</kbd>/<kbd>&rightarrow;</kbd>: Focus window on right 
-  * <kbd>J</kbd>/<kbd>&uparrow;</kbd>: Focus window on top 
-  * <kbd>K</kbd>/<kbd>&downarrow;</kbd>: Focus window underneath 
+  * <kbd>H</kbd>/<kbd>&leftarrow;</kbd>: Shrink window width
+  * <kbd>L</kbd>/<kbd>&rightarrow;</kbd>: Grow window width
+  * <kbd>J</kbd>/<kbd>&downarrow;</kbd>: Shrink window height
+  * <kbd>K</kbd>/<kbd>&uparrow;</kbd>: Grow window height
