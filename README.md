@@ -13,12 +13,11 @@ KERNEL=="card0", SUBSYSTEM=="drm", ACTION=="change", ENV{DISPLAY}=":0.0", ENV{XU
 ## Keys:
 Without leader key:
 
-* <kbd>Capslock</kbd>: Start `rofi` (launcher) for Desktop apps
-* <kbd>Ctrl</kbd><kbd>Capslock</kbd>: Start rofi (launcher) for Terminal commands
-* <kbd>Shift</kbd><kbd>Capslock</kbd>: Make `xpad` visible
-
-* <kbd>F11</kbd>: Launch audio configuration
-* <kbd>F12</kbd>: Launch WiFi configuration
+  * <kbd>Capslock</kbd>: Start `rofi` (launcher) for Desktop apps
+  * <kbd>Ctrl</kbd><kbd>Capslock</kbd>: Start rofi (launcher) for Terminal commands
+  * <kbd>Shift</kbd><kbd>Capslock</kbd>: Make `xpad` visible
+  * <kbd>F11</kbd>: Launch audio configuration
+  * <kbd>F12</kbd>: Launch WiFi configuration
 
 With leader key (<kbd>R-Window</kbd>):
 
@@ -48,7 +47,7 @@ With leader key (<kbd>R-Window</kbd>):
 * Window layout:
   * <kbd>Shift</kbd><kbd>T</kbd>: Tabbed layout
   * <kbd>Shift</kbd><kbd>\\</kbd> (`|`): Split horizontal
-  * <kbd>Shift</kbd><kbd>-<kbd> (`_`): Split vertical
+  * <kbd>Shift</kbd><kbd>-</kbd> (`_`): Split vertical
   * <kbd>F</kbd>: Go fullscreen
 * Window focus:
   * <kbd>Tab</kbd>: Toggle focus between floating and tiled windows
