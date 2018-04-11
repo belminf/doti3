@@ -47,6 +47,8 @@ With leader key (<kbd>R-Window</kbd>):
   * <kbd>S</kbd>: Split toggle (i.e., vertical v. horizontal) 
   * <kbd>F</kbd>: Go fullscreen
 * Window focus:
+  * <kbd>Tab</kbd>: Toggle focus between floating and tiled windows
+  * <kbd>Shift</kbd><kbd>Tab</kbd>: Toggle floating for a window
   * <kbd>H</kbd>/<kbd>&leftarrow;</kbd>: Focus window on left 
   * <kbd>L</kbd>/<kbd>&rightarrow;</kbd>: Focus window on right 
   * <kbd>J</kbd>/<kbd>&uparrow;</kbd>: Focus window on top 

@@ -130,16 +130,10 @@ bindsym $mod+f fullscreen toggle
 ## Floating
 
 # Toggle tiling/floating
-bindsym $mod+Tab floating toggle
+bindsym $mod+Shift+Tab floating toggle
 
-# Change focus
-bindsym $mod+Shift+Tab focus mode_toggle
-
-# Focus the parent container
-bindsym $mod+a focus parent
-
-# focus the child container
-bindsym $mod+d focus child
+# Change focus from tiling/focus windows
+bindsym $mod+Tab focus mode_toggle
 
 # Switch to workspace
 bindsym $mod+1 workspace 1
