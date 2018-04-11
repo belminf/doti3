@@ -17,11 +17,15 @@ Without leader key:
 * <kbd>Ctrl</kbd><kbd>Capslock</kbd>: Start rofi (launcher) for Terminal commands
 * <kbd>Shift</kbd><kbd>Capslock</kbd>: Make `xpad` visible
 
+* <kbd>F11</kbd>: Launch audio configuration
+* <kbd>F12</kbd>: Launch WiFi configuration
+
 With leader key (<kbd>R-Window</kbd>):
 
 * General:
   * <kbd>Shift+R</kbd>: Restart i3 and reload config
   * <kbd>End</kbd>: Bring up power menu (e.g., shutdown, restart, etc.)
+  * <kbd>Q</kbd>: Quit window
 * Application shortcuts:
   * <kbd>Enter</kbd>: Launch terminal (`tmux` in `termite`)
   * <kbd>Space</kbd>: Launch `chromium`

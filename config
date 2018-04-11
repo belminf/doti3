@@ -72,6 +72,7 @@ bindsym $mod+q kill
 ## Navigation
 
 # Change focus
+focus_follows_mouse yes
 bindsym $mod+h focus left; exec --no-startup-id ~/.config/i3/move_mouse.sh
 bindsym $mod+l focus right; exec --no-startup-id ~/.config/i3/move_mouse.sh
 bindsym $mod+j focus up; exec --no-startup-id ~/.config/i3/move_mouse.sh
@@ -176,13 +177,16 @@ exec_always --no-startup-id ${HOME}/.config/polybar/launch.sh
 
 ## Hardware
 
-# Floating windows
-for_window [title="Volume Control"] floating enable
+# Bluetooth
 for_window [title="Bluetooth Devices"] floating enable
-#for_window [title="Android Emulator - .*"] floating enable
-focus_follows_mouse yes
 
-# Volume control
+# Wifi
+bindsym F12 exec i3-sensible-terminal -t 'wifi-menu' -e 'sudo wifi-menu'
+for_window [title=wifi-menu] floating enable
+
+# Audio
+bindsym F11 exec pavucontrol
+for_window [title="Volume Control"] floating enable
 bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute @DEFAULT_SINK@ toggle"
