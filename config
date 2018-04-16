@@ -38,7 +38,7 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 bindsym $mod+End mode "$mode_system"
-bindsym $mod+Shift+End exec --no-startup-id light-locker-command -l
+bindsym $mod+Ctrl+End exec --no-startup-id light-locker-command -l
 
 
 ## Launcher
