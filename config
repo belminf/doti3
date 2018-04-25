@@ -85,6 +85,9 @@ bindsym $mod+t exec gtk-launch chrome-fnnjlkpjpjeohmhhiahkjkhlnogeaaeb-Default
 # Evernote
 bindsym $mod+e exec gtk-launch chrome-lbfehkoinhhcknnbdgnnmjhiladcgbol-Default
 
+# Gmail
+bindsym $mod+g exec gtk-launch chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default
+
 # Calculator
 bindsym $mod+equal exec =
 
