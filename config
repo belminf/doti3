@@ -67,8 +67,9 @@ for_window [class=xpad] floating enable
 bindsym $mod+Return exec i3-sensible-terminal -t 'termite - tmux' -e 'bash -i -c "tmux_group_attach"'
 
 # Chromium
-bindsym $mod+space exec gtk-launch chromium
+bindsym $mod+space exec gtk-launch personal-chromium
 bindsym $mod+Ctrl+space exec gtk-launch incognito-chromium
+bindsym $mod+Shift+space exec gtk-launch work-chromium
 
 # Whatsapp
 bindsym $mod+w exec gtk-launch chrome-hnpfjngllnobngcgfapefoaidbinmjnm-Default
