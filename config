@@ -24,7 +24,7 @@ exec --no-startup-id xpad -N
 ## Locking
 exec --no-startup-id xset s off
 exec --no-startup-id xset dpms 0 0 120
-exec --no-startup-id light-locker --lock-after-screensaver=180
+exec --no-startup-id light-locker --lock-after-screensaver=180 --lock-on-suspend
 
 ## Exit options
 set $mode_system Choose: (l) Lock, (x) Logout, (r) Reboot, (Shift+s) Shutdown
