@@ -64,7 +64,7 @@ for_window [class=xpad] floating enable
 ## Application shortcuts
 
 # Terminal: Using script from https://github.com/belminf/personal_scripts
-bindsym $mod+Return exec i3-sensible-terminal -t 'termite - tmux' -e 'bash -i -c "tmux_group_attach"'
+bindsym $mod+Return exec i3-sensible-terminal -e 'bash -i -c "tmux_group_attach"'
 
 # Chromium
 bindsym $mod+space exec gtk-launch personal-chromium
