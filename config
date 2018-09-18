@@ -203,11 +203,11 @@ bindsym $mod+Tab focus mode_toggle
 for_window [title="Bluetooth Devices"] floating enable
 
 # Wifi
-bindsym F12 exec i3-sensible-terminal -t 'wifi-menu' -e 'sudo wifi-menu'
+bindsym Shift+F12 exec i3-sensible-terminal -t 'wifi-menu' -e 'sudo wifi-menu'
 for_window [title="wifi-menu"] floating enable
 
 # Audio
-bindsym F11 exec pavucontrol
+bindsym Shift+F11 exec pavucontrol
 for_window [title="Volume Control"] floating enable
 bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume @DEFAULT_SINK@ -5%"
