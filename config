@@ -141,7 +141,8 @@ bindsym $mod+0 workspace 10
 
 # Managing workspace in display
 bindsym $mod+grave workspace next_on_output
-bindsym $mod+Shift+grave exec --no-startup-id ${HOME}/.config/i3/create_workspace.sh
+bindsym $mod+Ctrl+grave exec --no-startup-id ${HOME}/.config/i3/create_workspace.sh
+bindsym $mod+Shift+grave exec --no-startup-id ${HOME}/.config/i3/move_to_new_workspace.sh
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1; workspace 1
