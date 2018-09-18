@@ -157,7 +157,7 @@ bindsym $mod+Shift+0 move container to workspace 10; workspace 10
 
 # Resize window
 mode "resize" {
-       
+
         bindsym h resize shrink width 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
         bindsym j resize shrink height 10 px or 10 ppt
