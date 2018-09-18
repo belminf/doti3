@@ -86,6 +86,9 @@ bindsym $mod+t exec gtk-launch chrome-fnnjlkpjpjeohmhhiahkjkhlnogeaaeb-Default
 # Evernote
 bindsym $mod+e exec gtk-launch chrome-lbfehkoinhhcknnbdgnnmjhiladcgbol-Default
 
+# Standard Notes
+bindsym $mod+n exec gtk-launch standardnotes-desktop.desktop
+
 # Gmail
 bindsym $mod+g exec gtk-launch chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default
 
